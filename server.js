@@ -6,7 +6,7 @@ require('./modelo/conexion');
 const ruta = require('./controlador/controlador');
 
 
-const url = 'https://alfredoutria.github.io/FrontendTurismo';
+const url = 'https://alfredoutria.github.io/FrontendTurismo/';
 
 
   app.use(cors({
