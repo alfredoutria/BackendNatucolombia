@@ -6,8 +6,9 @@ require('./modelo/conexion');
 const ruta = require('./controlador/controlador');
 
 
-/*const url = 'http://127.0.0.1:5173';*/
+
 const url = 'https://natucolombia.netlify.app';
+/* const url = 'http://127.0.0.1:5173'; */
 
   app.use(cors({
     origin: url
@@ -22,6 +23,11 @@ const url = 'https://natucolombia.netlify.app';
 
   app.get('/', (req, res) => {
     res.send('Hola, mundo!');
+  });
+
+  app.use((req, res, next) => {
+    res.setHeader('Permissions-Policy', 'geolocation=(), microphone=()');
+    next();
   });
 
   app.listen(PORT, ()=>{
