@@ -6,7 +6,7 @@ require('./modelo/conexion');
 const ruta = require('./controlador/controlador');
 
 
-const url = 'https://alfredoutria.github.io/FrontendTurismo/';
+const url = 'https://main--effulgent-trifle-d84b2f.netlify.app/';
 
 
   app.use(cors({
