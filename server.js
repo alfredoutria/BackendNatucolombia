@@ -6,9 +6,13 @@ require('./modelo/conexion');
 const ruta = require('./controlador/controlador');
 
 
+const url = 'https://natucolombia.onrender.com';
 
+/* 
+const url = 'http://127.0.0.1:5173';
 const url = 'https://natucolombia.netlify.app';
-/* const url = 'http://127.0.0.1:5173'; */
+
+*/
 
   app.use(cors({
     origin: url
